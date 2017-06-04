@@ -1,0 +1,26 @@
+{
+  "name": "mc-multi-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "client": "beefy client.js:bundle.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "http": "0.0.0",
+    "minecraft-skin": "^0.1.2",
+    "mineflayer": "^2.1.1",
+    "serve": "^5.1.4",
+    "socket.io": "^1.7.3",
+    "voxel-debris": "0.0.4",
+    "voxel-engine": "^0.20.2",
+    "voxel-perlin-terrain": "^1.0.0",
+    "voxel-player": "^0.1.0",
+    "voxel-walk": "0.0.5"
+  }
+}

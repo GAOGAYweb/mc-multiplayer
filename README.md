@@ -24,8 +24,8 @@ Mineflayer is a high level JavaScript API to create Minecraft bots.
 load minecraft skins as meshes in three.js applications
 #### voxel-*
 An open source voxel game building toolkit for modern web browsers, including:
-*voxel-engine* - A voxel engine in javascript using three.js,
-*voxel-player* - Create a skinnable player with physics enabled.,
-*voxel-walk* - A simple walk cycle animation for minecraft-skin characters,
-*voxel-debris* - create and collect voxel debris from exploded voxels
+**voxel-engine** - A voxel engine in javascript using three.js,
+**voxel-player** - Create a skinnable player with physics enabled.,
+**voxel-walk** - A simple walk cycle animation for minecraft-skin characters,
+**voxel-debris** - create and collect voxel debris from exploded voxels
 ...

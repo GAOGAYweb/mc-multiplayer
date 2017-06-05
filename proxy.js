@@ -79,6 +79,12 @@ io.on('connection', function(socket) {
 		if (player_entity) {
 			console.log("position: " + player_entity.position.x + "," + player_entity.position.y + "," + player_entity.position.z);
 			socket.emit('join', { entity: player_entity, id: player_id });
+		} else {
+			console.log('empty player entity');
+			player_entity = {
+				username: player.username
+			};
+			socket.emit('join', { entity: player_entity, id: player_id });
 		}
 	});
 	bot.on('playerLeft', function(player) {

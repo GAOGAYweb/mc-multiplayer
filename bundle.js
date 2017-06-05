@@ -5317,7 +5317,10 @@ var skin = require('minecraft-skin');
 function addPlayer(player, id) {
 	var player_skin = skin(game.THREE, 'player1.png');
 	var player_skin_obj = player_skin.createPlayerObject();
-	var coord = coord_trans(player.position.x, player.position.y, player.position.z);
+	if (player.position)
+		var coord = coord_trans(player.position.x, player.position.y, player.position.z);
+	else
+		var coord = [0, 2, 0];
 	player_skin_obj.position.set(coord[0], coord[1], coord[2]);
 	console.log(player.username + " is added at " + coord[0] + "," + coord[1] + "," + coord[2])
 	game.scene.add(player_skin_obj);
@@ -5378,10 +5381,10 @@ function updatePos(player) {
 			// 	p_skin.iswalking = false;
 			// 	walk.stopWalking();
 			// }
-			console.log("update position of " + player.username
-				+ " to " + coord
-				);
-			p_skin.skin_obj.position.set(coord[0], coord[1], coord[2]);
+			// console.log("update position of " + player.username
+			// 	+ " to " + coord
+			// 	);
+			// p_skin.skin_obj.position.set(coord[0], coord[1], coord[2]);
 			break;
 		}
 	}
@@ -5461,8 +5464,9 @@ game.on('tick', function() {
 
 // coordination translation layer, input: position in MC, output: position in browser
 function coord_trans(x, y, z) {
-	return [ x - 61, y, z - 47];
+	return [ x - 188, y + 60, z + 55];
 }
+
 },{"minecraft-skin":74,"socket.io-client":83,"voxel-debris":106,"voxel-engine":107,"voxel-perlin-terrain":112,"voxel-player":114,"voxel-walk":119}],30:[function(require,module,exports){
 module.exports = AABB
 

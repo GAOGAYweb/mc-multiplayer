@@ -1,7 +1,7 @@
 # mc-multiplayer
-##introduction
+## introduction
 A multi-player minecraft game in browser based on voxel-engine. Partially implemented.
-##get started
+## get started
 start mc proxy
 ```
 node proxy.js

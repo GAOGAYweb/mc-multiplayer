@@ -12,18 +12,18 @@ browserify client.js -o bundle.js
 beefy client.js 9967
 ```
 
-##dependencies
-###web
-####express
+## dependencies
+### web
+#### express
 Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications.
-####socket.io
+#### socket.io
 Socket.IO enables real-time bidirectional event-based communication.
-###minecraft
-####mineflayer
+### minecraft
+#### mineflayer
 Mineflayer is a high level JavaScript API to create Minecraft bots.
-####minecraft-skin
+#### minecraft-skin
 load minecraft skins as meshes in three.js applications
-####voxel-*
+#### voxel-*
 An open source voxel game building toolkit for modern web browsers, including:
 voxel-engine - A voxel engine in javascript using three.js,
 voxel-player - Create a skinnable player with physics enabled.,
